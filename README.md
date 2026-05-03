@@ -1,15 +1,15 @@
-# 🌴 TravelLK — AI Travel Planning Agent for Sri Lanka
+# 🌴 TravelLK - AI Travel Planning Agent for Sri Lanka
 
 ---
 
 ## Overview
 
-**TravelLK** is an autonomous AI travel planning agent that generates personalised, day-by-day Sri Lanka itineraries. Given a trip duration, interests, and budget, the agent reasons about destinations, logistics, food, costs, and live weather — then outputs a fully structured travel plan.
+**TravelLK** is an autonomous AI travel planning agent that generates personalised, day-by-day Sri Lanka itineraries. Given a trip duration, interests, and budget, the agent reasons about destinations, logistics, food, costs, and live weather then outputs a fully structured travel plan.
 
 The agent integrates:
 - **LLM reasoning** (Groq API · LLaMA 3.3 70B) for itinerary generation and travel-style decisions
 - **Live weather** via OpenWeatherMap API
-- **Persistent memory** via SQLite — learns from past trips to personalise future plans
+- **Persistent memory** via SQLite learns from past trips to personalise future plans
 - **Interactive map** with extracted place names and coordinates
 - **Conversational chat** to refine or ask questions about any itinerary
 
@@ -26,9 +26,9 @@ The agent integrates:
 ```
 travellk/
 │
-├── app.py            # Streamlit UI — all pages and user interaction
-├── agent.py          # Core AI agent — LLM calls, tools, reasoning, planning
-├── memory.py         # SQLite memory — saves/retrieves past trips & preferences
+├── app.py            # Streamlit UI all pages and user interaction
+├── agent.py          # Core AI agent LLM calls, tools, reasoning, planning
+├── memory.py         # SQLite memory saves/retrieves past trips & preferences
 ├── travellk.db       # Auto-created SQLite database (generated at runtime)
 ├── requirements.txt
 └── README.md
@@ -115,7 +115,7 @@ groq
 requests
 ```
 
-> SQLite3 is included in Python's standard library — no installation needed.
+> SQLite3 is included in Python's standard library - no installation needed.
 
 ---
 
