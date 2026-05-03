@@ -2,26 +2,26 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 **TravelLK** is an autonomous AI travel planning agent that generates personalised, day-by-day Sri Lanka itineraries. Given a trip duration, interests, and budget, the agent reasons about destinations, logistics, food, costs, and live weather — then outputs a fully structured travel plan.
 
 The agent integrates:
-- 🧠 **LLM reasoning** (Groq API · LLaMA 3.3 70B) for itinerary generation and travel-style decisions
-- 🌦️ **Live weather** via OpenWeatherMap API
-- 💾 **Persistent memory** via SQLite — learns from past trips to personalise future plans
-- 🗺️ **Interactive map** with extracted place names and coordinates
-- 💬 **Conversational chat** to refine or ask questions about any itinerary
+- **LLM reasoning** (Groq API · LLaMA 3.3 70B) for itinerary generation and travel-style decisions
+- **Live weather** via OpenWeatherMap API
+- **Persistent memory** via SQLite — learns from past trips to personalise future plans
+- **Interactive map** with extracted place names and coordinates
+- **Conversational chat** to refine or ask questions about any itinerary
 
 ---
 
-## 🎬 Demo
+## Demo
 
-👉 **[Watch the YouTube Short](https://youtube.com/shorts/XO8byYigMPQ?feature=share)**
+**[Watch the YouTube Short](https://youtube.com/shorts/XO8byYigMPQ?feature=share)**
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 travellk/
@@ -36,9 +36,9 @@ travellk/
 
 ---
 
-## ⚙️ Features
+## Features
 
-### 🤖 Agent Capabilities
+### Agent Capabilities
 | Feature | Description |
 |---|---|
 | **Trip Planning** | Generates structured day-by-day itineraries with morning / afternoon / evening breakdowns |
@@ -47,7 +47,7 @@ travellk/
 | **Trip Refinement** | Refines an existing plan based on follow-up user feedback |
 | **Chat Mode** | Freeform Q&A about any aspect of the itinerary or Sri Lanka travel |
 
-### 🧠 Memory System
+### Memory System
 | Feature | Description |
 |---|---|
 | **Trip History** | Saves every generated itinerary to SQLite with timestamp |
@@ -55,17 +55,17 @@ travellk/
 | **Smart Context Injection** | Injects memory summary into every new LLM prompt for personalised results |
 | **Past Itinerary Reload** | Load and view any previously generated trip |
 
-### 🌦️ Live Weather
+### Live Weather
 - Fetches real-time weather for extracted destination cities using OpenWeatherMap
 - Displays temperature, conditions, humidity, and wind speed alongside the itinerary
 
-### 🗺️ Interactive Map
+### Interactive Map
 - Extracts place names from the generated itinerary
 - Plots them on an interactive map within the Streamlit UI
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 
@@ -107,7 +107,7 @@ streamlit run app.py
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 ```
 streamlit
@@ -119,7 +119,7 @@ requests
 
 ---
 
-## 🧱 Architecture
+## Architecture
 
 ```
 User Input (Streamlit UI)
